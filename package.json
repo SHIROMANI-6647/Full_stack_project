@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "admin": "^1.4.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "firebase": "^9.14.0",
+    "firebase-admin": "^11.2.1",
+    "is-an-prime-number": "^1.0.0",
+    "mathjs": "^11.4.0",
+    "node-telegram-bot-api": "^0.60.0",
+    "request": "^2.88.2",
+    "telegram-bot-api": "^2.0.1"
+  }
+}
