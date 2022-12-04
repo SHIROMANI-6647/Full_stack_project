@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SignUp</title>
+        <style>
+            h1{
+                font-weight: bold;
+                color: black;
+            }
+            form{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: larger;
+            font-weight: 300;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+   color: rgb(36, 29, 29);
+ 
+            }
+            body{
+                background-image: url('https://image.shutterstock.com/image-photo/flat-lay-photo-office-desk-260nw-1702110049.jpg');
+  border-style: double;
+  font-family: sans-serif;
+  background-size: cover;
+ 
+}
+.box{
+    width:500px;
+    height:500px;
+    padding-top: 0%;
+    background-image: url("https://wallpapercave.com/wp/wp3248771.jpg");
+    background-color: 66150e;
+    shape-outside: circle(50%);
+    color: white;
+
+}
+
+ 
+        </style>
+    </head>
+    
+    <body style="background-color:rgb(235, 233, 205);padding-top:30px;padding-bottom:20px;">
+        <div class="container bg-warning" style="padding-left: 400px;padding-right: 400px;padding-top: 0px;padding-bottom: 10px; border-radius: 3%;"></div>
+        <center>
+            
+            <h1>SignUp...</h1>
+        <form class="box"  name="myform"  method="GET" onsubmit=" return validatepassword()"  action="/signupsubmit"> 
+            Username<br><input type="text"  placeholder="Enter the username" name="name"  size="50px"  required><br/><br>
+            Email<br><input type="text" placeholder="Enter your Email" name="email" size="50px"  required><br/><br>
+            Mobile<br><input type="text" placeholder="Enter your Mobile Number" name="phone" size="50px" height="40" required><br/><br>
+            Password<br><input type="password" placeholder="enter strong password" name="password" size="50px" required><br/><br>
+            Confirm Password<br><input type="password" placeholder="Confirm password" name="password1" size="50px" required><br/><br>
+            <br><input type="submit" name="submit" value = Submit>
+        </form>
+        <script>
+            function validatepassword(){
+                var password=document.myform.password.value;
+                var cpassword=document.myform.password1.value;
+                if(password.length<6){
+                    alert("Password must contain 6 characters");
+                    return false;
+                }
+                if(password==cpassword){
+                    return true;
+                }
+                else{
+                    alert("Password and Confirm Password must be same");
+                    return false;
+                }
+            }
+
+         
+        </script>
+        <center><b>Use Social Media Credentials</b><br><br></center>
+        <a href="https://accounts.google.com/"><img class="img rounded" src="https://tse4.mm.bing.net/th?id=OIP.78pLivsALXSHjhy9NHuB4wHaHa&pid=Api&P=0" width="70" height="70"></a><nbsp></nbsp><nbsp></nbsp><nbsp></nbsp><nbsp></nbsp><nbsp></nbsp>
+        <a href="https://github.com"><img class="img rounded" src="https://tse1.mm.bing.net/th?id=OIP.EgSPriuEnAtlIWJV8R_E1QHaGs&pid=Api&P=0" width="70" height="70"></a><nbsp></nbsp><nbsp></nbsp>
+        <a href="https://www.facebook.com"><img class="img rounded" src="https://tse4.mm.bing.net/th?id=OIP.5Wm2l9foUpPcFI9dWplqdQHaG3&pid=Api&P=0" width="70" height="70"></a><nbsp></nbsp>
+        <br>
+        </center>
+    </body>
+</html>
