@@ -1,0 +1,96 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 50%;
+                width: 50%;
+				padding-bottom: 20px;
+				border:  4px solid #555;
+
+			}
+			button{
+				margin-top: 10px;
+			}
+	
+			body{
+				background-image: url("https://ak.picdn.net/shutterstock/videos/31742899/thumb/1.jpg");
+				background-size: cover;
+			}
+		</style>
+        <body>
+			<div class="container mt-3" id = "c1">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:midnightblue;font-weight:500;"> Books Store</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://www.textbooks.solutions/wp-content/archivos/2019/09/java-the-complete-reference-herbert-schildt-7ma-edicion.jpg">
+						<b><br>Introduction to Java</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1360/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Introduction to Java">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://i5.walmartimages.com/asr/fa9574f2-2d73-43ba-b3c5-9e0ad2cffe5d_1.41d85ba8dc65323c6cd0d0485dfdb406.jpeg" >
+						<b><br>Python Programming</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1100/-"><del><small>1350/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Python Programming">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://th.bing.com/th/id/OIP.mf98wOFtNW-QuH-lVG6nVQAAAA?w=155&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+						<b><br>Computer Organization and Architecture</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Computer Organization and Architecture">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://i.thenile.io/r1000/9780132126953.jpg?r=5e323f77227eb">
+						<b><br>Computer Networks</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Computer Networks">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://cs.cheggcdn.com/covers2/15850000/15857497_1388996278_Width200.jpg" >
+						<b><br>Software Engineering</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="649/-"><del><small>800/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Software Engineering">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse3.mm.bing.net/th?id=OIP.qOogVrxNTNyi-HbUWZLECQHaJk&pid=Api&P=0" >
+						<b><br>Machine Learning</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>850/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Machine Learning">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse2.mm.bing.net/th?id=OIP.6W15frx9Uavd-b22t4pdGwAAAA&pid=Api&P=0" >
+						<b><br>Information Retrieval System</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="800/-"><del><small>870/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Information Retrieval System">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse2.mm.bing.net/th?id=OIP.GQnWA8v5sCpKcYiQ6lWHcwAAAA&pid=Api&P=0">
+						<b><br>Operating Systems</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>990/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Operating Systems">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse4.mm.bing.net/th?id=OIP.OpHZZTzynSCGKDdh6w36kQHaJl&pid=Api&P=0" height="100%">
+						<b><br>Data Structures</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="999/-"><del><small>1200/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Data Structures">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse4.mm.bing.net/th?id=OIP.75WHcaM8bRiHk1FwvaqLJAAAAA&pid=Api&P=0" >
+						<b><br>Programming for problem solving</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1250/-"><del><small>1399/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Programming for problem solving">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://prodimage.images-bn.com/pimages/9780072226805_p0_v4_s550x406.jpg">
+						<b><br>C++</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="987/-"><del><small>1111/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="C++">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://tse2.mm.bing.net/th?id=OIP.fKeiVaYDlAmNEdjVGojGSgAAAA&pid=Api&P=0">
+						<b><br>Database Management System</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1150/-"><del><small>1250/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Database Management System">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>
